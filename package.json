@@ -1,0 +1,29 @@
+{
+  "name": "poc-azure-blob-media-optimization",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proof of Concept - Azure Blob media content optimization",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "wf:download": "node -r dotenv/config ./workflows/download.js",
+    "wf:resize": "node ./workflows/resize.js",
+    "wf:optimize": "node ./workflows/optimize.js",
+    "wf:upload": "node -r dotenv/config ./workflows/upload.js"
+  },
+  "author": "Ulises Gascon",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/storage-blob": "12.15.0",
+    "@ulisesgascon/array-to-chunks": "^1.0.1",
+    "debug": "^4.3.4",
+    "dotenv": "16.3.1",
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "read-chunk": "^3.2.0",
+    "sharp": "^0.32.4",
+    "standard": "^17.1.0"
+  }
+}
