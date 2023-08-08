@@ -11,6 +11,14 @@
   "license": "MIT",
   "dependencies": {
     "@azure/storage-blob": "12.15.0",
-    "dotenv": "16.3.1"
+    "@ulisesgascon/array-to-chunks": "^1.0.1",
+    "debug": "^4.3.4",
+    "dotenv": "16.3.1",
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "read-chunk": "^3.2.0",
+    "sharp": "^0.32.4",
+    "standard": "^17.1.0"
   }
 }
