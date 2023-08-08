@@ -1,4 +1,3 @@
-const { BlobServiceClient } = require('@azure/storage-blob')
 const { chunkArray } = require('@ulisesgascon/array-to-chunks')
 const { existsSync } = require('fs')
 const { join } = require('path')
