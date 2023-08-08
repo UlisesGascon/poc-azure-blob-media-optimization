@@ -5,9 +5,14 @@
   "description": "Proof of Concept - Azure Blob media content optimization",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "wf:download": "node -r dotenv/config ./workflows/download.js",
+    "wf:resize": "node ./workflows/resize.js",
+    "wf:optimize": "node ./workflows/optimize.js",
+    "wf:upload": "node -r dotenv/config ./workflows/upload.js"
   },
-  "author": "",
+  "author": "Ulises Gascon",
   "license": "MIT",
   "dependencies": {
     "@azure/storage-blob": "12.15.0",
