@@ -1,0 +1,16 @@
+{
+  "name": "poc-azure-blob-media-optimization",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proof of Concept - Azure Blob media content optimization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/storage-blob": "12.15.0",
+    "dotenv": "16.3.1"
+  }
+}
